@@ -1,0 +1,13 @@
+body{	
+	background:#EBF0F2;
+}
+h1 {
+	top:0px;
+	position: fixed;
+	height:20px; 
+	width:100%;
+	background:#D35348;
+	padding: 5px 10px 5px 10px; 
+	font-family: firasans-regular;
+	font-size: 12px;
+	color: #ffffff
