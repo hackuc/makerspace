@@ -1,15 +1,22 @@
 body{	
-	background:#EBF0F2;
+	background-image: url("H.png");
 }
-h1 {
+nav {
 	top:0px;
-	left: 0px
+	left: 0px;
 	position: fixed;
 	height:20px; 
 	width:100%;
+	box-shadow: 0px 0px 25px black;
 	background:#D35348;
-	padding: 5px 10px 5px 10px; 
+	padding: 5px 10px 5px 10px;
 	font-family: firasans-regular;
 	font-size: 12px;
 	color: #ffffff
+}
+div {
+	width     : 75%;
+	height    : 1000px;
+	background: #88ccff;
+	margin    : auto;
 }
