@@ -3,6 +3,7 @@ body{
 }
 h1 {
 	top:0px;
+	left: 0px
 	position: fixed;
 	height:20px; 
 	width:100%;
