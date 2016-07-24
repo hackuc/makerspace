@@ -3,7 +3,7 @@ body{
 }
 nav {
 	top:0px;
-	left: 0px;
+	left:0px;
 	position: fixed;
 	height:20px; 
 	width:100%;
@@ -15,8 +15,14 @@ nav {
 	color: #ffffff
 }
 div {
-	width     : 75%;
-	height    : 1000px;
-	background: #88ccff;
-	margin    : auto;
+	width: 75%;
+	height: 1000px;
+	background:#88ccff;
+	margin: auto;
+}
+.rcolumn{
+	position: absolute;
+	right: 100px;
+	width: 500px;
+	background-color:#ffffff
 }
