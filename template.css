@@ -1,18 +1,12 @@
 body{	
-/**<<<<<<< HEAD
 	background-color: 	#E5EFF1;
 }
 
 @font-face {
   font-family: 'Enriqueta';
   src: url("fonts/Enriqueta-Regular.otf") format("otf");
-=======**/
-	background:#EBF0F2;
 }
-@font-face {
-	font-family: 'Enriqueta';
-	src: url("fonts/Enriqueta-Regular.otf") format("otf");
-}
+
 .header{
 	text-align: center;
 	font-family: 'FiraSans';
@@ -23,36 +17,18 @@ nav {
 	top:0px;
 	left:0px;
 	position: fixed;
-/**
-<<<<<<< HEAD
 	height:8%;
-=======
-**/
-	height:25px; 
 	width:100%;
 	box-shadow: 0px 0px 1px black;
 	background:#D35348;
-/**
-<<<<<<< HEAD
 }
 
-div.nav {
+div:nav {
 	font-family: "Enriqueta";
 	font-size: 14px;
 	height:100%;
 	color: #ffffff;
 	padding: 18px 10px;
-	float: left;
-}
-=======
-**/
-}
-div.nav {
-	font-family: "Enriqueta";
-	font-size: 12px;
-	height:100%;
-	color: #ffffff;
-	padding: 5px 10px 5px 10px;
 	float: left;
 }
 .rcolumn{
@@ -65,6 +41,3 @@ div.nav {
 	width: 730px;
 	padding: 10px 10px 10px 10px;	
 }
-
-
->>>>>>> refs/remotes/origin/master
