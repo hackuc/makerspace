@@ -8,16 +8,16 @@ body{
 .header{
 	text-align: center;
 	font-family: 'FiraSans';
-	color: black;
+	color: white;
 	font-size: 20px;
 }
-nav {
-	top:0px;
+nav{
+	bottom:0px;
 	left:0px;
-	position: fixed;
+	position:fixed;
 	height:25px; 
 	width:100%;
-	box-shadow: 0px 0px 25px black;
+	box-shadow: 0px 0px 10px black;
 	background:#D35348;
 }
 div.nav {
@@ -28,15 +28,24 @@ div.nav {
 	padding: 5px 10px 5px 10px;
 	float: left;
 }
+.topborder{
+	position: absolute;
+	top: 75px;
+	background: #95B3D7;
+	right: 100px;
+	width: 730px;
+	height: 30px;
+	padding: 5px 10px 10px 10px;
+	margin-bottom: 0px;
+}
 .rcolumn{
 	position: absolute;
-	top: 75px; 
-	border-top: solid blue 40px;
-	border-color: #95B3D7;
+	top: 115px; 
 	background:#ffffff;
 	right: 100px;
 	width: 730px;
 	padding: 10px 10px 10px 10px;	
+	margin-top: 0px;
 }
 
 
