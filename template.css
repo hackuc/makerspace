@@ -11,7 +11,7 @@ body{
 	font-family: 'Enriqueta';
 	color: black;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 20px;
 }
 nav{
 	top:0px;
@@ -72,4 +72,24 @@ nav{
 	padding: 50px 10px 10px 10px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+.circle{
+	position:absolute;
+	background:#272E48;
+	display:inline;
+	float:top;
+	top:5px;
+	left:120px;
+	width:250px;
+	height:150px;
+	border-radius:50%;
+	font-family: 'Enriqueta';
+	font-size:60px;
+	line-height:80%;
+	padding-top:75px;
+	padding-bottom:25px;
+	text-align:center;
+	color:#ffffff;
+	clear:top;
+	
 }
