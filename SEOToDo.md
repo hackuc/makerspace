@@ -1,5 +1,4 @@
-###Things to do for SEO optimization
-Google Analytics code injection
+#Things to do for SEO optimization
 ```javascript
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -12,3 +11,13 @@ Google Analytics code injection
 
 </script>
 ```
+
+##Add and verify as Google Search Console
+
+##Add robots.txt file
+
+##Generate sitemap
+
+##[Run through readability score](https:// readability-score.com)
+
+##Meta tag code
