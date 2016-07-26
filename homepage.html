@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>UCMHS Makerspace</title>
-	<link rel="stylesheet" type="text/css" href="template.css">
+  <title>UCMHS Makerspace</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="overwrite.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="template.css">
 </head>
-<body>
-	<div></div>
-	<nav>
-		<div class="nav" style="width:40%"></div>
-		<div class="nav">Contact Us:</div>
-		<div class="nav">1776 Raritan Rd, Scotch Plains, NJ</div>
-		<div class="nav">[phone]</div>
-		<div class="nav">[email]</div>
-		<img style="position:absolute;left:25px;top:25px" src="H.png"/>
-	</nav>
-	<div class = "rcolumn">
-		<p>placeholder</p>
-	</div>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+  <div id="section1" class="rcolumn" style="top: 80px">
+    <h1>Scroll 1</h1>
+  </div>
+  <div id="section2" class="rcolumn" style="top: 5080px">
+    <h1>Scroll 2</h1>
+  </div>
+  <div id="section3" class="rcolumn" style="top: 10080px">
+    <h1>Scroll 3</h1>
+  </div>
+  <div class="topborder">
+    <p class="header">OUR TECHNOLOGY</p>
+  </div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid navbar-custom">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MakerSpace</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse navbar-custom" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#section1">Section 1</a></li>
+          <li><a class="page-scroll" href="#section2">Section 2</a></li>
+          <li><a class="page-scroll" href="#section3">Section 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 </body>
 </html>

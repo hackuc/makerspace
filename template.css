@@ -1,43 +1,75 @@
-body{	
+body{
 	background-color: 	#E5EFF1;
+	position : relative;
 }
-
 @font-face {
   font-family: 'Enriqueta';
-  src: url("fonts/Enriqueta-Regular.otf") format("otf");
+  src: url("fonts/Enriqueta-Regular.otf") format("opentype");
 }
-
 .header{
 	text-align: center;
-	font-family: 'FiraSans';
+	font-family: 'Enriqueta';
 	color: black;
-	font-size: 20px;
+	font-weight: bold;
+	font-size: 35px;
 }
-nav {
+nav{
 	top:0px;
 	left:0px;
-	position: fixed;
-	height:8%;
+	position:fixed;
+	height:50px;
 	width:100%;
-	box-shadow: 0px 0px 1px black;
+	box-shadow: 0px 0px 10px black;
 	background:#D35348;
+	font-family: 'Enriqueta';
 }
-
-div:nav {
-	font-family: "Enriqueta";
-	font-size: 14px;
-	height:100%;
-	color: #ffffff;
-	padding: 18px 10px;
-	float: left;
+.navbar-custom .nav li a:hover{
+    background-color: transparent;
+	text-color: #fff;
+}
+.navbar-custom .nav li.active a:hover {
+    background-color: rgba(0,0,0,.1);
+	text-color: #fff;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	font-variant: small-caps;
+    margin-left: -15px;
+    color: #ffc1bc;
+}
+.navbar-inverse .navbar-brand:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffc1bc;
+    transition: 0.5s;
+}
+.navbar-custom {
+  background-color: #d35348;
+}
+.navbar-custom .nav li.active a {
+    background-color: rgba(0,0,0,.1);
+	text-color: #ffc1bc;
+    transition: 0.5s;
+}
+.topborder{
+	position: absolute;
+	top: 75px;
+	background: #95B3D7;
+	display: inline;
+	right: 10%;
+	width: 50%;
+	height: 55px;
+	padding: 0px 10px 30px 10px;
+	margin-bottom: 0px;
 }
 .rcolumn{
 	position: absolute;
-	top: 75px; 
-	border-top: solid blue 40px;
-	border-color: #95B3D7;
 	background:#ffffff;
-	right: 100px;
-	width: 730px;
-	padding: 10px 10px 10px 10px;	
+	right: 10%;
+	width: 50%;
+	height: 5000px;
+	padding: 50px 10px 10px 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
