@@ -1,53 +1,79 @@
 body{
-	background:#EBF0F2;
+	background-color: 	#E5EFF1;
+	position : relative;
 }
 @font-face {
-	font-family: 'Enriqueta';
-	src: url("fonts/Enriqueta-Regular.otf") format("otf");
+  font-family: 'Enriqueta';
+  src: url("fonts/Enriqueta-Regular.otf") format("opentype");
 }
 .header{
 	text-align: center;
 	font-family: 'Enriqueta';
-	color: white;
-	font-size: 20px;
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 5px;
+	vertical-align: center;
 }
 nav{
-	bottom:0px;
+	top:0px;
 	left:0px;
 	position:fixed;
-	height:25px;
+	height:50px;
 	width:100%;
 	box-shadow: 0px 0px 10px black;
 	background:#D35348;
+	font-family: 'Enriqueta';
 }
-div.nav {
-	font-family: "Enriqueta";
-	font-size: 12px;
-	height:100%;
-	color: #ffffff;
-	padding: 5px 10px 5px 10px;
-	float: left;
+.navbar-custom .nav li a:hover{
+    background-color: transparent;
+	text-color: #fff;
+}
+.navbar-custom .nav li.active a:hover {
+    background-color: rgba(0,0,0,.1);
+	text-color: #fff;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	font-variant: small-caps;
+    margin-left: -15px;
+    color: #ffc1bc;
+}
+.navbar-inverse .navbar-brand:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffc1bc;
+    transition: 0.5s;
+}
+.navbar-custom {
+  background-color: #d35348;
+}
+.navbar-custom .nav li.active a {
+    background-color: rgba(0,0,0,.1);
+	text-color: #ffc1bc;
+    transition: 0.5s;
 }
 .topborder{
 	position: absolute;
 	top: 75px;
 	background: #95B3D7;
 	display: inline;
-	right: 100px;
-	width: 730px;
-	height: 30px;
+	right: 10%;
+	width: 50%;
+	height: 55px;
 	padding: 0px 10px 30px 10px;
 	margin-bottom: 0px;
 }
 .rcolumn{
 	position: absolute;
-	top: 130px;
 	background:#ffffff;
-	right: 100px;
-	width: 730px;
-	padding: 10px 10px 10px 10px;
+	right: 10%;
+	width: 50%;
+	height: 5000px;
+	padding: 50px 10px 10px 10px;
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 .circle{
 	position:absolute;
@@ -57,16 +83,17 @@ div.nav {
 	top:5px;
 	left:120px;
 	width:250px;
-	height:150px;
+	height:250px;
 	border-radius:50%;
 	font-family: 'Enriqueta';
 	font-size:60px;
-	line-height:80%;
-	padding-top:75px;
+	line-height:50%;
+	padding-top:25px;
 	padding-bottom:25px;
 	text-align:center;
 	color:#ffffff;
 	clear:top;
 	
 }
-
+.navbar-toggle {
+}
