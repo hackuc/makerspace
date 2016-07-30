@@ -75,25 +75,6 @@ nav{
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-.circle{
-	position:absolute;
-	background:#272E48;
-	display:inline;
-	float:top;
-	top:5px;
-	left:120px;
-	width:250px;
-	height:250px;
-	border-radius:50%;
-	font-family: 'Enriqueta';
-	font-size:60px;
-	line-height:50%;
-	padding-top:25px;
-	padding-bottom:25px;
-	text-align:center;
-	color:#ffffff;
-	clear:top;
-	
-}
+
 .navbar-toggle {
 }
