@@ -10,29 +10,41 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="template.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
-  <div id="section1" class="rcolumn" style="top: 80px">
-    <p>Scroll 1</p>
-  </div>
-  <div id="section2" class="rcolumn" style="top: 5080px">
-  
-    <p>Scroll 2</p>
-  </div>
-  <div id="section3" class="rcolumn" style="top: 10080px">
-    <p>Scroll 3</p>
-  </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" style="position:relative">
+	  <a id="facebook" href="https://facebook.com"><img class="facebook" src="fb copy.png"></a>
+	  <a id="twitter" href="https://twitter.com/mhsmakerspace"><img class="twitter" src="twitter copy.png"></a>
+	  <a id="instagram" href="https://instagram.com/mhsmakerspace"><img class="instagram" src="insta copy.png"></a>
+	  <a id="mail" href="mhsmakerspace@ucvts.org"><img class="mail" src="alt mail.png"></a>
   <div class="topborder">
     <p class="header">OUR TECHNOLOGY</p>
+  </div>
+  <div class="rcolumn" style="top: 80px">
+	<a class="anchor" id="section1"></a>
+    <p><h1>Scroll 1</h1></p>
+  </div>
+  <div class="rcolumn" style="top: 5080px">  
+	<a class="anchor" id="section2"></a>
+    <p><h1>Scroll 2</h1></p>
+  </div>
+  <div class="rcolumn" style="top: 10080px">
+	<a class="anchor" id="section3"></a>
+    <p><h1>Scroll 3</h1></p>
+  </div>
+  <div class="contact">
+    <p class="contact">Contact{{1}} Us:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1776 Raritan Road, Scotch Plains, NJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Phone]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Email]</p>
   </div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid navbar-custom">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">MakerSpace</a>
+      <a id="circle" class="circle" href="#"><br>Maker</br><br>Space</br></a>
+	  <a id="ucvtsLogo" href="http://www.ucvts.org"><img class="ucvtsLogo img-circle" src="ucvtsglobe copy.png"></a>
+	  <a id="magnetLogo" href="http://www.ucvts.org/domain/15"><img class="magnetLogo img-circle" src="magnetlogo.png"></a>
+      <a id="main" class="navbar-brand" href="#">MakerSpace</a>
     </div>
     <div>
       <div class="collapse navbar-collapse navbar-custom" id="myNavbar">
@@ -44,13 +56,47 @@
       </div>
     </div>
   </div>
-  <a href="#"><img style ="position:absolute; float:center;top:25px;left:70px;width:325px;height:325px"src="makerspace.png"></a>
-  <a href="https://ucvts.org"><img style="position:relative;bottom:10px;left:65px;width:50px;height:50px"src="ucvtsglobe copy.png"></a>
-  <a href="https://www.ucvts.org/domain/15"><img style="position:relative;top:40px;right:25px;width:50px;height:50px"src="magnetlogo.png"></a>
-  <a href="https://facebook.com"><img style="position:relative;top:100px;right:85px;width:50px;height:50px"src="fb copy.png"></a>
-  <a href="https://twitter.com/mhsmakerspace"><img style="position:relative;top:160px;right:130px;width:50px;height:50px"src="twitter copy.png"></a>
-  <a href="https://instagram.com/mhsmakerspace"><img style="position:relative;top:210px;right:160px;width:50px;height:50px"src="insta copy.png"></a>
-  <a href="mhsmakerspace@ucvts.org"><img style="position:relative;top:250px;right:170px;width:40px;height:40px"src="alt mail.png"></a>
+  <script>
+	$(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+	  });
+	});
+	$(window).scroll(function() {
+	  if ($(window).width() > 768) {
+		if ($(document).scrollTop() > 100) {
+			$("#circle").fadeOut("fast");
+			$("#ucvtsLogo").fadeOut("fast");
+			$("#magnetLogo").fadeOut("fast");
+			$("#facebook").fadeOut("fast");
+			$("#twitter").fadeOut("fast");
+			$("#instagram").fadeOut("fast");
+			$("#mail").fadeOut("fast");
+			$("#main").fadeIn("fast");
+			console.log(1);
+		} else {
+			$("#main").fadeOut("fast");
+			$("#ucvtsLogo").fadeIn("fast");
+			$("#magnetLogo").fadeIn("fast");
+			$("#facebook").fadeIn("fast");
+			$("#twitter").fadeIn("fast");
+			$("#instagram").fadeIn("fast");
+			$("#mail").fadeIn("fast");
+			$("#circle").fadeIn("fast");
+	    	console.log(2);
+		}
+	  }
+	});
+  </script>
 </nav>
 </body>
 </html>
