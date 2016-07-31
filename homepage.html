@@ -10,29 +10,29 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="template.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
-  <div id="section1" class="rcolumn" style="top: 80px">
-    <h1>Scroll 1</h1>
-  </div>
-  <div id="section2" class="rcolumn" style="top: 5080px">
-    <h1>Scroll 2</h1>
-  </div>
-  <div id="section3" class="rcolumn" style="top: 10080px">
-    <h1>Scroll 3</h1>
-  </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" style="position:relative">
   <div class="topborder">
     <p class="header">OUR TECHNOLOGY</p>
+  </div>
+  <div id="section1" class="rcolumn">
+    <p><h1>Scroll 1</h1></p>
+  </div>
+  <div id="section2" class="rcolumn">
+    <p><h1>Scroll 2</h1></p>
+  </div>
+  <div id="section3" class="rcolumn">
+    <p><h1>Scroll 3</h1></p>
   </div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid navbar-custom">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="circle" href="#"><br>Maker</br><br>Space</br></a>
-      <a class="navbar-brand" href="#">MakerSpace</a>
+      <a id="main" class="navbar-brand" href="#">MakerSpace</a>
+      <a id="circle" class="circle" href="#"><br>Maker</br><br>Space</br></a>
     </div>
     <div>
       <div class="collapse navbar-collapse navbar-custom" id="myNavbar">
@@ -44,6 +44,17 @@
       </div>
     </div>
   </div>
+  <script>
+$(window).scroll(function() {
+      if ($(".navbar").offset().top > 100) {
+        $("#circle").fadeOut("fast");
+        $("#main").fadeIn("fast");
+      } else {
+        $("#main").fadeOut("fast");
+        $("#circle").fadeIn("fast");
+      }
+});
+  </script>
 </nav>
 </body>
 </html>
