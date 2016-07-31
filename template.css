@@ -189,6 +189,33 @@ p.contact {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #circle {
+	  display: none;
+  }
+  #ucvtsLogo {
+	  display:none;
+  }
+  #magnetLogo {
+	  display: none;
+  }
+  #facebook {
+	  display: none;
+  }
+  #twitter {
+	  display: none;
+  }
+  #instagram {
+	  display: none;
+  }
+  #mail {
+	  display: none;
+  }
+  #main {
+	  display:block;
+  }
+}
+
 @media only screen and (min-width: 2000px) {
   a.circle, a:hover.circle {
 	position:absolute;

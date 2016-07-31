@@ -38,8 +38,8 @@
         <span class="icon-bar"></span>
       </button>
       <a id="circle" class="circle" href="#"><br>Maker</br><br>Space</br></a>
-	  <a id="ucvtsLogo" href="https://ucvts.org"><img class="ucvtsLogo img-circle" src="ucvtsglobe copy.png"></a>
-	  <a id="magnetLogo" href="https://www.ucvts.org/domain/15"><img class="magnetLogo img-circle" src="magnetlogo.png"></a>
+	  <a id="ucvtsLogo" href="http://www.ucvts.org"><img class="ucvtsLogo img-circle" src="ucvtsglobe copy.png"></a>
+	  <a id="magnetLogo" href="http://www.ucvts.org/domain/15"><img class="magnetLogo img-circle" src="magnetlogo.png"></a>
 	  <a id="facebook" href="https://facebook.com"><img class="facebook" src="fb copy.png"></a>
 	  <a id="twitter" href="https://twitter.com/mhsmakerspace"><img class="twitter" src="twitter copy.png"></a>
 	  <a id="instagram" href="https://instagram.com/mhsmakerspace"><img class="instagram" src="insta copy.png"></a>
@@ -72,25 +72,29 @@
 	  });
 	});
 	$(window).scroll(function() {
-      if ($(".navbar").offset().top > 100) {
-        $("#circle").fadeOut("fast");
-        $("#ucvtsLogo").fadeOut("fast");
-        $("#magnetLogo").fadeOut("fast");
-        $("#facebook").fadeOut("fast");
-        $("#twitter").fadeOut("fast");
-        $("#instagram").fadeOut("fast");
-        $("#mail").fadeOut("fast");
-        $("#main").fadeIn("fast");
-      } else {
-        $("#main").fadeOut("fast");
-        $("#ucvtsLogo").fadeIn("fast");
-        $("#magnetLogo").fadeIn("fast");
-        $("#facebook").fadeIn("fast");
-        $("#twitter").fadeIn("fast");
-        $("#instagram").fadeIn("fast");
-        $("#mail").fadeIn("fast");
-        $("#circle").fadeIn("fast");
-      }
+	  if ($(window).width() > 768) {
+		if ($(document).scrollTop() > 100) {
+			$("#circle").fadeOut("fast");
+			$("#ucvtsLogo").fadeOut("fast");
+			$("#magnetLogo").fadeOut("fast");
+			$("#facebook").fadeOut("fast");
+			$("#twitter").fadeOut("fast");
+			$("#instagram").fadeOut("fast");
+			$("#mail").fadeOut("fast");
+			$("#main").fadeIn("fast");
+			console.log(1);
+		} else {
+			$("#main").fadeOut("fast");
+			$("#ucvtsLogo").fadeIn("fast");
+			$("#magnetLogo").fadeIn("fast");
+			$("#facebook").fadeIn("fast");
+			$("#twitter").fadeIn("fast");
+			$("#instagram").fadeIn("fast");
+			$("#mail").fadeIn("fast");
+			$("#circle").fadeIn("fast");
+	    	console.log(2);
+		}
+	  }
 	});
   </script>
 </nav>
