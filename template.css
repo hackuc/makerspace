@@ -2,7 +2,7 @@
 	display: none;
 }
 body{
-	background-color: 	#E5EFF1;
+	background-color:#E5EFF1;
 	position : relative;
 }
 @font-face {
@@ -13,8 +13,11 @@ body{
   font-family: 'FiraSans';
   src: url("fonts/FiraSans-Regular.otf") format("opentype");
 }
-p {
-  padding-top: 30px;
+a.anchor {
+	display: block;
+	position: relative;
+	top: -50px;
+	visibility:hidden;
 }
 .header{
 	text-align: center;
@@ -24,23 +27,29 @@ p {
 	font-size: 30px;
 	padding-top: 5px;
 	vertical-align: center;
+	transition:0.5s;
 }
-nav{
-	top:0px;
-	left:0px;
-	position:fixed;
+nav {
 	height:50px;
-	width:100%;
 	box-shadow: 0px 0px 10px black;
 	background:#D35348;
 	font-family: 'Enriqueta';
+}
+.navbar-custom {
+  background-color: #d35348;
 }
 .navbar-custom .nav li a:hover{
     background-color: transparent;
 	color: #fff;
 }
+.navbar-custom .nav li.active a:visited {
+    background-color: #be4b41;
+	color: #ffc1bc;
+    transition: 1s;
+}
+
 .navbar-custom .nav li.active a:hover {
-    background-color: rgba(0,0,0,.1);
+    background-color: be4b41;
 	color: #fff;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
@@ -57,14 +66,6 @@ nav{
     color: #ffc1bc;
     transition: 1s;
 }
-.navbar-custom {
-  background-color: #d35348;
-}
-.navbar-custom .nav li.active a {
-    background-color: rgba(0,0,0,.1);
-	text-color: #ffc1bc;
-    transition: 1s;
-}
 .topborder{
 	background: #95B3D7;
 	float: right;
@@ -74,6 +75,7 @@ nav{
 	padding: 0px 10px 30px 10px;
 	margin-top: 75px;
 	margin-right: 20%;
+	transition:0.5s;
 }
 .rcolumn{
 	background:#ffffff;
@@ -85,18 +87,27 @@ nav{
 	font-family: 'FiraSans';
 	margin-right: 20%;
 }
+div.contact {
+	width:100%;
+	clear:both;
+	height:35px;
+	background:#000;
+	padding-top:5px;
+	color:#999;
+	font-family: 'Enriqueta';
+}
 a.circle, a:hover.circle {
 	position:absolute;
 	background:#272E48;
 	display:inline;
 	float:top;
-	top:5px;
-	left:25px;
-	width:18vw;
-	height:18vw;
+	top:1vw;
+	left:5vw;
+	width:15vw;
+	height:15vw;
 	border-radius:50%;
 	font-family: 'Enriqueta';
-	font-size:5vw;
+	font-size:4vw;
 	line-height:50%;
 	padding-top:2.5vw;
 	text-align:center;
@@ -104,38 +115,131 @@ a.circle, a:hover.circle {
 	text-decoration: none;
 	clear:top;	
 	font-variant: small-caps;
-	transition: 0.5s;
+	box-shadow: 0px 0px 10px black;
 }
- a:hover.circle {
+a:hover.circle {
 	color:#ffffff;
 }
-/**
-@media only screen and (max-width: 768px) {
-  a.circle, a:hover.circle {
+
+.ucvtsLogo {
+	background:#fff;
 	position:absolute;
-	background:#272E48;
-	display:inline;
-	float:top;
-	top:5px;
-	left:25px;
-	width:250px;
-	height:250px;
-	border-radius:50%;
-	font-family: 'Enriqueta';
-	font-size:75px;
-	line-height:50%;
-	padding-top:25px;
-	padding-bottom:25px;
+	top:1.5vw;
+	left:2vw;
+	width:5vw;
+	height:5vw;
+	box-shadow: 0px 0px 10px black;
+}
+.magnetLogo {
+	position:absolute;
+	top:6.5vw;
+	left:1vw;
+	width:5vw;
+	height:5vw;
+	box-shadow: 0px 0px 10px black;
+}
+.facebook {
+	position:absolute;
+	top:12vw;
+	left:3vw;
+	width:3vw;
+	height:3vw;
+}
+.twitter {
+	position:absolute;
+	top:14.5vw;
+	left:5vw;
+	width:3vw;
+	height:3vw;
+}
+.instagram {
+	position:absolute;
+	top:16vw;
+	left:8vw;
+	width:3vw;
+	height:3vw;
+}
+.mail {
+	position:absolute;
+	top:17vw;
+	left:12vw;
+	width:3vw;
+	height:3vw;
+}
+
+p.contact {
+	margin-right:40px;
+	font-size: 14px;
 	text-align:center;
-	color:#ccc;
-	text-decoration: none;
-	clear:top;	
-	font-variant: small-caps;
-	transition: 0.5s;
-	visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .header{
+	font-size: 15px;
+	padding-top: 2.5px;
+	transition:0.5s;
   }
-  #main {
-	display: block;
+  .topborder{
+	width: 60%;
+	height: 25px;
+	padding: 0px 10px 30px 10px;
+	margin-top: 60px;
+	margin-right: 20%;
+	transition:0.5s;
   }
 }
-**/
+
+@media only screen and (min-width: 2000px) {
+  a.circle, a:hover.circle {
+	position:absolute;
+	top:0.5vw;
+	left:2.5vw;
+	width:7.5vw;
+	height:7.5vw;
+	transition: 0.5s;
+	font-size:2vw;
+	padding-top:1.25vw;
+  }
+  .ucvtsLogo {
+	top:0.75vw;
+	left:1vw;
+	width:2.5vw;
+	height:2.5vw;
+	transition: 0.5s;
+  }
+  .magnetLogo {
+	top:3.25vw;
+	left:0.5vw;
+	width:2.5vw;
+	height:2.5vw;
+	transition: 0.5s;
+  }
+  .facebook {
+	top:6vw;
+	left:1.5vw;
+	width:1.5vw;
+	height:1.5vw;
+	transition: 0.5s;
+  }
+  .twitter {
+	top:7.25vw;
+	left:2.5vw;
+	width:1.5vw;
+	height:1.5vw;
+	transition: 0.5s;
+  }
+  .instagram {
+	top:8vw;
+	left:4vw;
+	width:1.5vw;
+	height:1.5vw;
+	transition: 0.5s;
+  }
+  .mail {
+	top:8.5vw;
+	left:6vw;
+	width:1.5vw;
+	height:1.5vw;
+	transition: 0.5s;
+  }
+}

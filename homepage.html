@@ -14,14 +14,20 @@
   <div class="topborder">
     <p class="header">OUR TECHNOLOGY</p>
   </div>
-  <div id="section1" class="rcolumn">
+  <div class="rcolumn" style="top: 80px">
+	<a class="anchor" id="section1"></a>
     <p><h1>Scroll 1</h1></p>
   </div>
-  <div id="section2" class="rcolumn">
+  <div class="rcolumn" style="top: 5080px">  
+	<a class="anchor" id="section2"></a>
     <p><h1>Scroll 2</h1></p>
   </div>
-  <div id="section3" class="rcolumn">
+  <div class="rcolumn" style="top: 10080px">
+	<a class="anchor" id="section3"></a>
     <p><h1>Scroll 3</h1></p>
+  </div>
+  <div class="contact">
+    <p class="contact">Contact Us:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1776 Raritan Road, Scotch Plains, NJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Phone]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Email]</p>
   </div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid navbar-custom">
@@ -31,8 +37,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a id="main" class="navbar-brand" href="#">MakerSpace</a>
       <a id="circle" class="circle" href="#"><br>Maker</br><br>Space</br></a>
+	  <a id="ucvtsLogo" href="https://ucvts.org"><img class="ucvtsLogo img-circle" src="ucvtsglobe copy.png"></a>
+	  <a id="magnetLogo" href="https://www.ucvts.org/domain/15"><img class="magnetLogo img-circle" src="magnetlogo.png"></a>
+	  <a id="facebook" href="https://facebook.com"><img class="facebook" src="fb copy.png"></a>
+	  <a id="twitter" href="https://twitter.com/mhsmakerspace"><img class="twitter" src="twitter copy.png"></a>
+	  <a id="instagram" href="https://instagram.com/mhsmakerspace"><img class="instagram" src="insta copy.png"></a>
+	  <a id="mail" href="mhsmakerspace@ucvts.org"><img class="mail" src="alt mail.png"></a>
+      <a id="main" class="navbar-brand" href="#">MakerSpace</a>
     </div>
     <div>
       <div class="collapse navbar-collapse navbar-custom" id="myNavbar">
@@ -45,15 +57,41 @@
     </div>
   </div>
   <script>
-$(window).scroll(function() {
+	$(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+	  });
+	});
+	$(window).scroll(function() {
       if ($(".navbar").offset().top > 100) {
         $("#circle").fadeOut("fast");
+        $("#ucvtsLogo").fadeOut("fast");
+        $("#magnetLogo").fadeOut("fast");
+        $("#facebook").fadeOut("fast");
+        $("#twitter").fadeOut("fast");
+        $("#instagram").fadeOut("fast");
+        $("#mail").fadeOut("fast");
         $("#main").fadeIn("fast");
       } else {
         $("#main").fadeOut("fast");
+        $("#ucvtsLogo").fadeIn("fast");
+        $("#magnetLogo").fadeIn("fast");
+        $("#facebook").fadeIn("fast");
+        $("#twitter").fadeIn("fast");
+        $("#instagram").fadeIn("fast");
+        $("#mail").fadeIn("fast");
         $("#circle").fadeIn("fast");
       }
-});
+	});
   </script>
 </nav>
 </body>
