@@ -30,7 +30,7 @@ a.anchor {
 	transition:0.5s;
 }
 nav {
-	height:50px;
+	height:45px;
 	box-shadow: 0px 0px 10px black;
 	background:#D35348;
 	font-family: 'Enriqueta';
@@ -54,7 +54,7 @@ nav {
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 	font-variant: small-caps;
-    margin-left: -15px;
+    margin-left: 0px;
     color: #ffc1bc;
 }
 .navbar-inverse .navbar-brand:hover {
@@ -121,6 +121,12 @@ a:hover.circle {
 	color:#ffffff;
 }
 
+p.contact {
+	margin-right:40px;
+	font-size: 14px;
+	text-align:center;
+}
+
 .ucvtsLogo {
 	background:#fff;
 	position:absolute;
@@ -138,39 +144,67 @@ a:hover.circle {
 	height:5vw;
 	box-shadow: 0px 0px 10px black;
 }
+
 .facebook {
-	position:absolute;
 	top:12vw;
 	left:3vw;
 	width:3vw;
 	height:3vw;
+	transition:0.5s;
 }
 .twitter {
-	position:absolute;
-	top:14.5vw;
-	left:5vw;
+	top:15vw;
+	left:5.5vw;
 	width:3vw;
 	height:3vw;
+	transition:0.5s;
 }
 .instagram {
-	position:absolute;
-	top:16vw;
-	left:8vw;
+	top:16.5vw;
+	left:9vw;
 	width:3vw;
 	height:3vw;
+	transition:0.5s;
 }
 .mail {
-	position:absolute;
-	top:17vw;
-	left:12vw;
+	top:16.5vw;
+	left:13vw;
 	width:3vw;
 	height:3vw;
+	transition:0.5s;
 }
 
-p.contact {
-	margin-right:40px;
-	font-size: 14px;
-	text-align:center;
+.facebook-left {
+	margin-top: 50px;
+	top: 5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+}
+.twitter-left {
+	margin-top: 50px;
+	top:12.5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+}
+.instagram-left {
+	margin-top: 50px;
+	top:20vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+}
+.mail-left {
+	margin-top: 50px;
+	top:27.5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -237,56 +271,72 @@ p.contact {
 }
 
 @media only screen and (min-width: 2000px) {
-  a.circle, a:hover.circle {
-	position:absolute;
-	top:0.5vw;
-	left:2.5vw;
-	width:7.5vw;
-	height:7.5vw;
-	transition: 0.5s;
-	font-size:2vw;
-	padding-top:1.25vw;
-  }
-  .ucvtsLogo {
-	top:0.75vw;
-	left:1vw;
-	width:2.5vw;
-	height:2.5vw;
-	transition: 0.5s;
-  }
-  .magnetLogo {
-	top:3.25vw;
-	left:0.5vw;
-	width:2.5vw;
-	height:2.5vw;
-	transition: 0.5s;
-  }
-  .facebook {
-	top:6vw;
-	left:1.5vw;
-	width:1.5vw;
-	height:1.5vw;
-	transition: 0.5s;
-  }
-  .twitter {
-	top:7.25vw;
-	left:2.5vw;
-	width:1.5vw;
-	height:1.5vw;
-	transition: 0.5s;
-  }
-  .instagram {
-	top:8vw;
-	left:4vw;
-	width:1.5vw;
-	height:1.5vw;
-	transition: 0.5s;
-  }
-  .mail {
-	top:8.5vw;
-	left:6vw;
-	width:1.5vw;
-	height:1.5vw;
-	transition: 0.5s;
-  }
+	a.circle, a:hover.circle {
+		position:absolute;
+		top:0.5vw;
+		left:2.5vw;
+		width:7.5vw;
+		height:7.5vw;
+		transition: 0.5s;
+		font-size:2vw;
+		padding-top:1.25vw;
+	}
+	.ucvtsLogo {
+		top:0.75vw;
+		left:1vw;
+		width:2.5vw;
+		height:2.5vw;
+		transition: 0.5s;
+	}
+	.magnetLogo {
+		top:3.25vw;
+		left:0.5vw;
+		width:2.5vw;
+		height:2.5vw;
+		transition: 0.5s;
+	}
+	.facebook {
+		position: fixed;
+		top:6vw;
+		left:1.5vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+	.twitter {
+		position: fixed;
+		top:7.25vw;
+		left:2.5vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+	.instagram {
+		position: fixed;
+		top:8vw;
+		left:4vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+	.mail {
+		position: fixed;
+		top:8.5vw;
+		left:6vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+}
+
+#button {
+	border: none;
+}
+
+#button:focus {
+	background-color: #be4b41;
+}
+
+#button:hover {
+	background-color: #be4b41;
 }
