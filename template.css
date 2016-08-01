@@ -6,12 +6,12 @@ body{
 	position : relative;
 }
 @font-face {
-  font-family: 'Enriqueta';
-  src: url("fonts/Enriqueta-Regular.otf") format("opentype");
+	font-family: 'Enriqueta';
+	src: url("fonts/Enriqueta-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: 'FiraSans';
-  src: url("fonts/FiraSans-Regular.otf") format("opentype");
+	font-family: 'FiraSans';
+	src: url("fonts/FiraSans-Regular.otf") format("opentype");
 }
 a.anchor {
 	display: block;
@@ -32,30 +32,36 @@ a.anchor {
 nav {
 	height:45px;
 	box-shadow: 0px 0px 10px black;
-	background:#D35348;
+/*	background:#D35348;*/
+	background:#6a4c28;
 	font-family: 'Enriqueta';
 }
 .navbar-custom {
-  background-color: #d35348;
+/*	background:#D35348;*/
+	background:#6a4c28;
 }
 .navbar-custom .nav li a:hover{
     background-color: transparent;
 	color: #fff;
 }
 .navbar-custom .nav li.active a:visited {
-    background-color: #be4b41;
-	color: #ffc1bc;
+/*	background-color: #be4b41;*/
+	background-color: #5b4122;
+/*	color: #ffc1bc;*/
+	color: #e0caaf;
     transition: 1s;
 }
 
 .navbar-custom .nav li.active a:hover {
-    background-color: be4b41;
+/*	background-color: #be4b41;*/
+	background-color: #5b4122;
 	color: #fff;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 	font-variant: small-caps;
     margin-left: 0px;
-    color: #ffc1bc;
+/*	color: #ffc1bc;*/
+	color: #e0caaf;
 }
 .navbar-inverse .navbar-brand:hover {
     color: #fff;
@@ -63,7 +69,8 @@ nav {
     transition: 1s;
 }
 .navbar-inverse .navbar-nav>li>a {
-    color: #ffc1bc;
+/*	color: #ffc1bc;*/
+	color: #e0caaf;
     transition: 1s;
 }
 .topborder{
@@ -176,34 +183,34 @@ p.contact {
 
 .facebook-left {
 	margin-top: 50px;
-	top: 5vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	top: 2vw;
+	left:2vw;
+	width:3vw;
+	height:3vw;
 	transition:0.5s;
 }
 .twitter-left {
 	margin-top: 50px;
-	top:12.5vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	top:6.5vw;
+	left:2vw;
+	width:3vw;
+	height:3vw;
 	transition:0.5s;
 }
 .instagram-left {
 	margin-top: 50px;
-	top:20vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	top:11vw;
+	left:2vw;
+	width:3vw;
+	height:3vw;
 	transition:0.5s;
 }
 .mail-left {
 	margin-top: 50px;
-	top:27.5vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	top:15.5vw;
+	left:2vw;
+	width:3vw;
+	height:3vw;
 	transition:0.5s;
 }
 
@@ -224,50 +231,50 @@ p.contact {
 }
 
 @media only screen and (max-width: 768px) {
-  #circle {
-	  display: none;
-  }
-  #ucvtsLogo {
-	  display:none;
-  }
-  #magnetLogo {
-	  display: none;
-  }
-  #main {
-	  display:block;
-  }
-  .facebook {
-	margin-top: 50px;
-	top: 5vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
-	transition:0.5s;
-  }
-  .twitter {
-	margin-top: 50px;
-	top:12.5vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
-	transition:0.5s;
-  }
-  .instagram {
-	margin-top: 50px;
-	top:20vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
-	transition:0.5s;
-  }
-  .mail {
-	margin-top: 50px;
-	top:27.5vw;
-	left:7.5vw;
-	width:5vw;
-	height:5vw;
-	transition:0.5s;
-  }
+	#circle {
+		display: none;
+	}
+	#ucvtsLogo {
+		display:none;
+	}
+	#magnetLogo {
+		display: none;
+	}
+	#main {
+		display:block;
+	}
+	.facebook {
+		margin-top: 50px;
+		top: 5vw;
+		left:7.5vw;
+		width:5vw;
+		height:5vw;
+		transition:0.5s;
+	}
+	.twitter {
+		margin-top: 50px;
+		top:12.5vw;
+		left:7.5vw;
+		width:5vw;
+		height:5vw;
+		transition:0.5s;
+	}
+	.instagram {
+		margin-top: 50px;
+		top:20vw;
+		left:7.5vw;
+		width:5vw;
+		height:5vw;
+		transition:0.5s;
+	}
+	.mail {
+		margin-top: 50px;
+		top:27.5vw;
+		left:7.5vw;
+		width:5vw;
+		height:5vw;
+		transition:0.5s;
+	}
 }
 
 @media only screen and (min-width: 2000px) {
@@ -334,9 +341,11 @@ p.contact {
 }
 
 #button:focus {
-	background-color: #be4b41;
+/*	background-color: #be4b41;*/
+	background-color: #5b4122;
 }
 
 #button:hover {
-	background-color: #be4b41;
+/*	background-color: #be4b41;*/
+	background-color: #5b4122;
 }
