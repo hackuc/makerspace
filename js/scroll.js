@@ -14,7 +14,7 @@ $(function() {
 });
 $(window).scroll(function() {
 	if ($(window).width() > 768) {
-		if ($(document).scrollTop() > 100) {
+		if ($(document).scrollTop() > $(window).height()) {
 			$("#circle").fadeOut("fast");
 			$("#ucvtsLogo").fadeOut("fast");
 			$("#magnetLogo").fadeOut("fast");
