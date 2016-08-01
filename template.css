@@ -1,3 +1,6 @@
+#main {
+	display: none;
+}
 body{
 	background-color:#E5EFF1;
 	position : relative;
@@ -5,6 +8,16 @@ body{
 @font-face {
   font-family: 'Enriqueta';
   src: url("fonts/Enriqueta-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: 'FiraSans';
+  src: url("fonts/FiraSans-Regular.otf") format("opentype");
+}
+a.anchor {
+	display: block;
+	position: relative;
+	top: -50px;
+	visibility:hidden;
 }
 .header{
 	text-align: center;
@@ -14,67 +27,316 @@ body{
 	font-size: 30px;
 	padding-top: 5px;
 	vertical-align: center;
+	transition:0.5s;
 }
-nav{
-	top:0px;
-	left:0px;
-	position:fixed;
-	height:50px;
-	width:100%;
+nav {
+	height:45px;
 	box-shadow: 0px 0px 10px black;
 	background:#D35348;
 	font-family: 'Enriqueta';
 }
+.navbar-custom {
+  background-color: #d35348;
+}
 .navbar-custom .nav li a:hover{
     background-color: transparent;
-	text-color: #fff;
+	color: #fff;
 }
+.navbar-custom .nav li.active a:visited {
+    background-color: #be4b41;
+	color: #ffc1bc;
+    transition: 1s;
+}
+
 .navbar-custom .nav li.active a:hover {
-    background-color: rgba(0,0,0,.1);
-	text-color: #fff;
+    background-color: be4b41;
+	color: #fff;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 	font-variant: small-caps;
-    margin-left: -15px;
+    margin-left: 0px;
     color: #ffc1bc;
 }
 .navbar-inverse .navbar-brand:hover {
     color: #fff;
     background-color: transparent;
+    transition: 1s;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #ffc1bc;
-    transition: 0.5s;
-}
-.navbar-custom {
-  background-color: #d35348;
-}
-.navbar-custom .nav li.active a {
-    background-color: rgba(0,0,0,.1);
-	text-color: #ffc1bc;
-    transition: 0.5s;
+    transition: 1s;
 }
 .topborder{
-	position: absolute;
-	top: 75px;
 	background: #95B3D7;
+	float: right;
 	display: inline;
-	right: 10%;
-	width: 50%;
+	width: 60%;
 	height: 55px;
 	padding: 0px 10px 30px 10px;
-	margin-bottom: 0px;
+	margin-top: 75px;
+	margin-right: 20%;
+	transition:0.5s;
 }
 .rcolumn{
-	position: absolute;
 	background:#ffffff;
+	float: right;
 	right: 10%;
-	width: 50%;
+	width: 60%;
 	height: 5000px;
-	padding: 50px 10px 10px 10px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	padding: 10px 10px 10px 10px;
+	font-family: 'FiraSans';
+	margin-right: 20%;
+}
+div.contact {
+	width:100%;
+	clear:both;
+	height:35px;
+	background:#000;
+	padding-top:5px;
+	color:#999;
+	font-family: 'Enriqueta';
+}
+a.circle, a:hover.circle {
+	position:absolute;
+	background:#272E48;
+	display:inline;
+	float:top;
+	top:1vw;
+	left:5vw;
+	width:15vw;
+	height:15vw;
+	border-radius:50%;
+	font-family: 'Enriqueta';
+	font-size:4vw;
+	line-height:50%;
+	padding-top:2.5vw;
+	text-align:center;
+	color:#d8e1ff;
+	text-decoration: none;
+	clear:top;	
+	font-variant: small-caps;
+	box-shadow: 0px 0px 10px black;
+}
+a:hover.circle {
+	color:#ffffff;
 }
 
-.navbar-toggle {
+p.contact {
+	margin-right:40px;
+	font-size: 14px;
+	text-align:center;
+}
+
+.ucvtsLogo {
+	background:#fff;
+	position:absolute;
+	top:1.5vw;
+	left:2vw;
+	width:5vw;
+	height:5vw;
+	box-shadow: 0px 0px 10px black;
+}
+.magnetLogo {
+	position:absolute;
+	top:6.5vw;
+	left:1vw;
+	width:5vw;
+	height:5vw;
+	box-shadow: 0px 0px 10px black;
+}
+
+.facebook {
+	top:12vw;
+	left:3vw;
+	width:3vw;
+	height:3vw;
+	transition:0.5s;
+}
+.twitter {
+	top:15vw;
+	left:5.5vw;
+	width:3vw;
+	height:3vw;
+	transition:0.5s;
+}
+.instagram {
+	top:16.5vw;
+	left:9vw;
+	width:3vw;
+	height:3vw;
+	transition:0.5s;
+}
+.mail {
+	top:16.5vw;
+	left:13vw;
+	width:3vw;
+	height:3vw;
+	transition:0.5s;
+}
+
+.facebook-left {
+	margin-top: 50px;
+	top: 5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+}
+.twitter-left {
+	margin-top: 50px;
+	top:12.5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+}
+.instagram-left {
+	margin-top: 50px;
+	top:20vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+}
+.mail-left {
+	margin-top: 50px;
+	top:27.5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .header{
+	font-size: 15px;
+	padding-top: 2.5px;
+	transition:0.5s;
+  }
+  .topborder{
+	width: 60%;
+	height: 25px;
+	padding: 0px 10px 30px 10px;
+	margin-top: 60px;
+	margin-right: 20%;
+	transition:0.5s;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #circle {
+	  display: none;
+  }
+  #ucvtsLogo {
+	  display:none;
+  }
+  #magnetLogo {
+	  display: none;
+  }
+  #main {
+	  display:block;
+  }
+  .facebook {
+	margin-top: 50px;
+	top: 5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+  }
+  .twitter {
+	margin-top: 50px;
+	top:12.5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+  }
+  .instagram {
+	margin-top: 50px;
+	top:20vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+  }
+  .mail {
+	margin-top: 50px;
+	top:27.5vw;
+	left:7.5vw;
+	width:5vw;
+	height:5vw;
+	transition:0.5s;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+	a.circle, a:hover.circle {
+		position:absolute;
+		top:0.5vw;
+		left:2.5vw;
+		width:7.5vw;
+		height:7.5vw;
+		transition: 0.5s;
+		font-size:2vw;
+		padding-top:1.25vw;
+	}
+	.ucvtsLogo {
+		top:0.75vw;
+		left:1vw;
+		width:2.5vw;
+		height:2.5vw;
+		transition: 0.5s;
+	}
+	.magnetLogo {
+		top:3.25vw;
+		left:0.5vw;
+		width:2.5vw;
+		height:2.5vw;
+		transition: 0.5s;
+	}
+	.facebook {
+		position: fixed;
+		top:6vw;
+		left:1.5vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+	.twitter {
+		position: fixed;
+		top:7.25vw;
+		left:2.5vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+	.instagram {
+		position: fixed;
+		top:8vw;
+		left:4vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+	.mail {
+		position: fixed;
+		top:8.5vw;
+		left:6vw;
+		width:1.5vw;
+		height:1.5vw;
+		transition: 0.5s;
+	}
+}
+
+#button {
+	border: none;
+}
+
+#button:focus {
+	background-color: #be4b41;
+}
+
+#button:hover {
+	background-color: #be4b41;
 }

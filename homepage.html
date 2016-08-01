@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>UCMHS Makerspace</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="overwrite.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="template.css">
+	<title>UCMHS Makerspace</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/scroll.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
-  <div id="section1" class="rcolumn" style="top: 80px">
-    <p>Scroll 1</p>
-  </div>
-  <div id="section2" class="rcolumn" style="top: 5080px">
-  
-    <p>Scroll 2</p>
-  </div>
-  <div id="section3" class="rcolumn" style="top: 10080px">
-    <p>Scroll 3</p>
-  </div>
-  <div class="topborder">
-    <p class="header">OUR TECHNOLOGY</p>
-  </div>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid navbar-custom">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">MakerSpace</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse navbar-custom" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="page-scroll" href="#section1">Section 1</a></li>
-          <li><a class="page-scroll" href="#section2">Section 2</a></li>
-          <li><a class="page-scroll" href="#section3">Section 3</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <a href="#"><img style ="position:absolute; float:center;top:25px;left:70px;width:325px;height:325px"src="makerspace.png"></a>
-  <a href="https://ucvts.org"><img style="position:relative;bottom:10px;left:65px;width:50px;height:50px"src="ucvtsglobe copy.png"></a>
-  <a href="https://www.ucvts.org/domain/15"><img style="position:relative;top:40px;right:25px;width:50px;height:50px"src="magnetlogo.png"></a>
-  <a href="https://facebook.com"><img style="position:relative;top:100px;right:85px;width:50px;height:50px"src="fb copy.png"></a>
-  <a href="https://twitter.com/mhsmakerspace"><img style="position:relative;top:160px;right:130px;width:50px;height:50px"src="twitter copy.png"></a>
-  <a href="https://instagram.com/mhsmakerspace"><img style="position:relative;top:210px;right:160px;width:50px;height:50px"src="insta copy.png"></a>
-  <a href="mhsmakerspace@ucvts.org"><img style="position:relative;top:250px;right:170px;width:40px;height:40px"src="alt mail.png"></a>
-</nav>
+	<a href="https://facebook.com"><img id="facebook" class="facebook" style="position:fixed" src="icons/fb copy.png"></a>
+	<a href="https://twitter.com/mhsmakerspace"><img id="twitter" class="twitter" style="position:fixed" src="icons/twitter copy.png"></a>
+	<a href="https://instagram.com/mhsmakerspace"><img id="instagram" class="instagram" style="position:fixed" src="icons/alt insta.png"></a>
+	<a href="mhsmakerspace@ucvts.org"><img id="mail" class="mail" style="position:fixed" src="icons/alt mail.png"></a>
+	<div class="topborder">
+		<p class="header">OUR TECHNOLOGY</p>
+	</div>
+	<div class="rcolumn" style="top: 80px">
+		<a class="anchor" id="section1"></a>
+		<p><h1>Scroll 1</h1></p>
+	</div>
+	<div class="rcolumn" style="top: 5080px">  
+		<a class="anchor" id="section2"></a>
+		<p><h1>Scroll 2</h1></p>
+	</div>
+	<div class="rcolumn" style="top: 10080px">
+		<a class="anchor" id="section3"></a>
+		<p><h1>Scroll 3</h1></p>
+	</div>
+	<div class="contact">
+		<p class="contact">Contact{{1}} Us:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1776 Raritan Road, Scotch Plains, NJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Phone]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Email]</p>
+	</div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid navbar-custom">
+			<div class="navbar-header">
+				<button type="button" id="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a id="circle" class="circle" href="#"><br>Maker</br><br>Space</br></a>
+				<a id="ucvtsLogo" href="http://www.ucvts.org"><img class="ucvtsLogo img-circle" src="ucvtsglobe copy.png"></a>
+				<a id="magnetLogo" href="http://www.ucvts.org/domain/15"><img class="magnetLogo img-circle" src="magnetlogo.png"></a>
+				<a id="main" class="navbar-brand" href="#">MakerSpace</a>
+			</div>
+			<div>
+				<div class="collapse navbar-collapse navbar-custom" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="page-scroll" href="#section1">Section 1</a></li>
+						<li><a class="page-scroll" href="#section2">Section 2</a></li>
+						<li><a class="page-scroll" href="#section3">Section 3</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 </body>
 </html>
