@@ -130,7 +130,7 @@ p.contact {
 .ucvtsLogo {
 	background:#fff;
 	position:absolute;
-	top:1.5vw;
+	top:1.3vw;
 	left:2vw;
 	width:5vw;
 	height:5vw;
@@ -178,32 +178,32 @@ p.contact {
 	margin-top: 50px;
 	top: 5vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
 }
 .twitter-left {
 	margin-top: 50px;
 	top:12.5vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
 }
 .instagram-left {
 	margin-top: 50px;
 	top:20vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
 }
 .mail-left {
 	margin-top: 50px;
 	top:27.5vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
 }
 
@@ -240,32 +240,32 @@ p.contact {
 	margin-top: 50px;
 	top: 5vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
   }
   .twitter {
 	margin-top: 50px;
 	top:12.5vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
   }
   .instagram {
 	margin-top: 50px;
 	top:20vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
   }
   .mail {
 	margin-top: 50px;
 	top:27.5vw;
 	left:7.5vw;
-	width:5vw;
-	height:5vw;
+	width:2.5vw;
+	height:2.5vw;
 	transition:0.5s;
   }
 }
