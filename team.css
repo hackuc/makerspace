@@ -1,0 +1,106 @@
+body{
+	background-image: url("branch.png");
+}
+@font-face {
+	font-family: 'Enriqueta';
+	src: url("fonts/Enriqueta-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: 'FiraSans';
+	src: url("fonts/FiraSans-Regular.otf") format("opentype");
+}
+div.section:hover .innerHover, div.section:hover .bubble, div.section:hover .centered{
+	opacity:1.0;
+    filter:alpha(opacity=100);
+}
+.myImage {
+     position: fixed;
+     background: transparent;
+     width: 300px;
+	 top: 68%;
+	 left: 50%;
+	 padding: 5px;
+	 transform: translate(-50%, -50%);
+}
+.innerHover {
+	font-family: 'FiraSans';
+	font-size: 12px;
+	text-align: center;
+    position: center;
+    top: 55%;
+    left: 50%;
+    /*width: 50px;
+    height: 50px;*/
+	color:#ffffff;
+	opacity:0.0;
+    filter:alpha(opacity=0);
+}
+/*.innerHover:hover{
+	background:black;
+    /*opacity:1.0;
+    filter:alpha(opacity=100); /** no transparency on hover *
+}*/
+.bubble{
+	display: block;
+	position: absolute;
+	top:50px; 
+	left:500px;
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	background: white center top no-repeat;
+}
+.bubble:hover, .centered:hover{
+	display: block;
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	width:300px;
+	height:300px;
+	border-radius:150px;
+	transition:1.0s;
+	background: transparent;
+	/*background-image: url("test.jpg");*/
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	/*opacity:1.0;
+    filter:alpha(opacity=100); */
+}
+
+.centered {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width:300px;
+  height:300px;
+  border-radius:150px;
+  /*background: white;*/
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  opacity:0.0;
+  filter:alpha(opacity=0);
+}
+
+
+/*.branch{
+  /* Set rules to fill background 
+  background: "branch.png";
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling 
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning 
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image
+  .branch {
+    left: 50%;
+    margin-left: -512px;   /* 50% 
+  }
+}*/
