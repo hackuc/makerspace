@@ -1,5 +1,5 @@
 body{
-	background-image: url("branch.png");
+	background-image: url("backgrounds/CircuitImage4.png");
 }
 @font-face {
 	font-family: 'Enriqueta';
@@ -9,7 +9,7 @@ body{
 	font-family: 'FiraSans';
 	src: url("fonts/FiraSans-Regular.otf") format("opentype");
 }
-div.section:hover .innerHover, div.section:hover .bubble, div.section:hover .centered{
+div.section:hover .innerHover, div.section:hover .centered{
 	opacity:1.0;
     filter:alpha(opacity=100);
 }
@@ -27,6 +27,7 @@ div.section:hover .innerHover, div.section:hover .bubble, div.section:hover .cen
 	font-size: 12px;
 	text-align: center;
     position: center;
+	background: rgba(0, 0, 0, 0.5);
     top: 55%;
     left: 50%;
     /*width: 50px;
@@ -41,40 +42,33 @@ div.section:hover .innerHover, div.section:hover .bubble, div.section:hover .cen
     filter:alpha(opacity=100); /** no transparency on hover *
 }*/
 .bubble{
-	display: block;
 	position: absolute;
-	top:50px; 
-	left:500px;
-	width:50px;
-	height:50px;
-	border-radius:25px;
-	background: white center top no-repeat;
-}
-.bubble:hover, .centered:hover{
-	display: block;
-	position: fixed;
-	top: 35%;
-	left: 50%;
-	width:300px;
-	height:300px;
-	border-radius:150px;
-	transition:1.0s;
-	background: transparent;
-	/*background-image: url("test.jpg");*/
-	/* bring your own prefixes */
+	display: inline;
+	padding: 3px 3px 3px 3px;
+	width:64px;
+	height:64px;
+	border-radius:35px;
+	background: red /*center top no-repeat*/;
 	transform: translate(-50%, -50%);
-	/*opacity:1.0;
-    filter:alpha(opacity=100); */
+}
+.bubble:hover{
+	width: 90px;
+	height: 90px;
+	padding: 5px 5px 5px 5px;
+	border-radius: 50px;
+	transition:0.5s;
+	
 }
 
 .centered {
   position: fixed;
   top: 30%;
   left: 50%;
-  width:300px;
-  height:300px;
+  width:290px;
+  height:290px;
   border-radius:150px;
-  /*background: white;*/
+  padding: 5px 5px 5px 5px;
+  background: white;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   opacity:0.0;
