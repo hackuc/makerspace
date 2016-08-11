@@ -1,7 +1,17 @@
 body{
+<<<<<<< HEAD
 	background-image: url("branch.png");
 }
 
+=======
+	background-image: url("backgrounds/CircuitImage8.png");
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-position: center-top;
+}
+>>>>>>> refs/remotes/mhsmakerspace/master
 @font-face {
 	font-family: 'Enriqueta';
 	src: url("fonts/Enriqueta-Regular.otf") format("opentype");
@@ -10,77 +20,36 @@ body{
 	font-family: 'FiraSans';
 	src: url("fonts/FiraSans-Regular.otf") format("opentype");
 }
-
-img.bg{
-  /* Set rules to fill background*/ 
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */ 
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */ 
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image*/ 
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */ 
-  }
-}
-div.section:hover .innerHover, div.section:hover .centered{
-	opacity:1.0;
-    filter:alpha(opacity=100);
-}
 .myImage {
-     position: fixed;
-     background: transparent;
-     width: 300px;
-	 top: 68%;
-	 left: 20%;
-	 padding: 5px;
-	 transform: translate(-50%, -50%);
-}
-.innerHover {
+    position: fixed;
 	font-family: 'FiraSans';
 	font-size: 12px;
 	text-align: center;
-    position: center;
-	background: rgba(0, 0, 0, 0.5);
-    top: 55%;
-    left: 20%;
-    /*width: 50px;
-    height: 50px;*/
-	color:#ffffff;
-	opacity:0.0;
-    filter:alpha(opacity=0);
-}
-/*.innerHover:hover{
-	background:black;
-    /*opacity:1.0;
-    filter:alpha(opacity=100); /** no transparency on hover *
-}*/
-.gbubble{
-	position: absolute;
-	display: inline;
-	padding: 3px 3px 3px 3px;
-	width:64px;
-	height:64px;
-	border-radius:35px;
-	background: #54E823 /*center top no-repeat*/;
+    background: rgba(0, 128, 255, 0.5);
+    width: 35vw;
+    height: 50px;
+	top: 60%;
+	left: 20%;
+	padding: 5px;
 	transform: translate(-50%, -50%);
+	color:#ffffff;
 }
+
+.gbubble{
+	position: fixed;
+	width:4.6vw;
+	height:4.6vw;
+	padding: 0.1vw 0.1vw;
+	border-radius:50%;
+	transform: translate(-50%, -50%);
+	background-color: #cccccc;
+}
+
 .gbubble:hover{
-	width: 90px;
-	height: 90px;
-	padding: 5px 5px 5px 5px;
-	border-radius: 50px;
-	transition:0.5s;
-	
+	width: 6vw;
+	height: 6vw;
+	border-radius: 50%;
+	transition:0.25s;
 }
 
 .centered {
@@ -92,8 +61,26 @@ div.section:hover .innerHover, div.section:hover .centered{
   border-radius:150px;
   padding: 5px 5px 5px 5px;
   background: white;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  opacity:0.0;
-  filter:alpha(opacity=0);
 }
+<<<<<<< HEAD
+=======
+
+p {
+	background: rgba(0, 128, 255, 0.5);
+}
+
+#about {
+	background: rgba(0, 128, 255, 0.5);
+	display:none;
+}
+
+@media screen and (max-width: 787px) {
+	.centered {
+		top: 25vw;
+		width: 36.84879vw;
+		height: 36.84879vw;
+		transition: 0.5s;
+	}
+}
+>>>>>>> refs/remotes/mhsmakerspace/master

@@ -12,6 +12,13 @@ $(function() {
         }
 	});
 });
+$(window).resize(function() {
+	if ($(window).width() < 768) {
+		$("#myNavbar").addClass("collapse","fast");
+	} else {
+		$("#myNavbar").removeClass("collapse","fast");
+	}
+})
 $(window).scroll(function() {
 	if ($(window).width() > 768) {
 		if ($(document).scrollTop() > $(window).height()) {
@@ -27,6 +34,7 @@ $(window).scroll(function() {
 			$("#mail").removeClass("mail","fast");
 			$("#mail").addClass("mail-left","fast");
 			$("#main").fadeIn("fast");
+			$("#nav").addClass("dark", "slow");
 		} else {
 			$("#main").fadeOut("fast");
 			$("#ucvtsLogo").fadeIn("fast");
@@ -40,6 +48,12 @@ $(window).scroll(function() {
 			$("#mail").removeClass("mail-left","fast");
 			$("#mail").addClass("mail","fast");
 			$("#circle").fadeIn("fast");
+			$("#nav").removeClass("dark", "slow");
 		}
+	}
+	if ($(document).scrollTop() > $(window).height()) {
+		$("#nav").addClass("dark", "slow");
+	} else {
+		$("#nav").removeClass("dark", "slow");
 	}
 });

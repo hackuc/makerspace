@@ -41,11 +41,17 @@ nav {
 	box-shadow: 0px 0px 0px;
 	border: none;
 }
+.dark {
+	background: #222;
+}
 .navbar-custom {
 	background:transparent;
 /*	background:#D35348;*/
 /*	background:#6a4c28;*/
 /*	background:#FFFFF0;*/
+}
+.collapsed {
+	background: #222;
 }
 .navbar-custom .nav li a:hover{
     background-color: transparent;
@@ -56,7 +62,7 @@ nav {
 	color: #999;
 }
 .navbar-custom .nav li.active a:visited {
-	background-color: #222;
+	background-color: #111;
 /*	background-color: #5b4122;*/
 	color: #999;
 /*	color: #ffc1bc;*/
@@ -66,7 +72,7 @@ nav {
 
 .navbar-custom .nav li.active a:hover {
 /*	background-color: #be4b41;*/
-	background-color: #333;
+	background-color: #000408;
 /*	background-color: #5b4122;*/
 	color: #F8F8FF;
 }
@@ -368,11 +374,11 @@ p.contact {
 }
 
 #button:focus {
-	background-color: #be4b41;
+	background-color: #111;
 /*	background-color: #5b4122;*/
 }
 
 #button:hover {
-	background-color: #be4b41;
+	background-color: #111;
 /*	background-color: #5b4122;*/
 }
