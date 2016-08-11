@@ -1,6 +1,7 @@
-/*body{
-	background-image: url("backgrounds/CircuitImage4.png");
-}*/ 
+body{
+	background-image: url("branch.png");
+}
+
 @font-face {
 	font-family: 'Enriqueta';
 	src: url("fonts/Enriqueta-Regular.otf") format("opentype");
@@ -96,4 +97,3 @@ div.section:hover .innerHover, div.section:hover .centered{
   opacity:0.0;
   filter:alpha(opacity=0);
 }
-
