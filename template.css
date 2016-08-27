@@ -4,6 +4,7 @@ html {
 
 body {
 	background-color:#E5EFF1;
+	background: url("backgrounds/pattern.jpg");
 	position : relative;
 	height: 100%;
 }
@@ -103,25 +104,25 @@ div.image {
 	background-repeat: no-repeat;
 }
 div.topborder{
-	background: #95B3D7;
 	float: right;
 	display: inline;
-	width: 60%;
-	height: 55px;
-	padding: 0px 10px 30px 10px;
-	margin-top: 75px;
-	margin-right: 20%;
-	transition:0.5s;
+	width: 100%;
+	height: 75px;
+	padding: 10px 10px 0px 10px;
+	margin-right: 0%;
+	border-bottom: 5px solid white;
+	box-shadow: 0px 3px 2px #000;
 }
 div.rcolumn{
-	background:#ffffff;
+	background:rgba(255,255,255,0.75);
 	float: right;
 	right: 10%;
-	width: 60%;
-	/*height: 5000px;*/
-	padding: 10px 10px 10px 10px;
+	width: 100%;
+	/*min-height: 350px;*/
+	padding: 50px 10vw 50px 10vw;
 	font-family: 'FiraSans';
-	margin-right: 20%;
+	font-size: 20px;
+	margin-right: 0%;
 }
 div.contact {
 	width:100%;
@@ -338,6 +339,12 @@ a.twitter-timeline:focus {
 	}
 }
 
+#twitter-widget-0 {
+	position: relative !important;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 @media only screen and (min-width: 2000px) {
 	a.circle, a:hover.circle {
 		position:absolute;
@@ -409,4 +416,41 @@ a.twitter-timeline:focus {
 #button:hover {
 	background-color: #111;
 /*	background-color: #5b4122;*/
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: block;
+  margin-left: -35px;
+  color: #000;
+}
+
+#label1::before {
+  content: "+";
+  vertical-align: text-top;
+  text-align: center;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+
+#label1:hover {
+	color: #444;
+}
+
+#toggle1:checked ~ #faq1 {
+  display: inline;
+}
+
+#toggle1:checked ~ #label1::before {
+  content: "-";
+}
+
+#faq1 {
+	display: none;
 }
