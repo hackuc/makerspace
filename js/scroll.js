@@ -21,7 +21,7 @@ $(window).resize(function() {
 })
 $(window).scroll(function() {
 	if ($(window).width() > 768) {
-		if ($(document).scrollTop() > $(window).height()) {
+		if ($(document).scrollTop() > $(window).height()/2) {
 			$("#circle").fadeOut("fast");
 			$("#ucvtsLogo").fadeOut("fast");
 			$("#magnetLogo").fadeOut("fast");
@@ -34,7 +34,6 @@ $(window).scroll(function() {
 			$("#mail").removeClass("mail","fast");
 			$("#mail").addClass("mail-left","fast");
 			$("#main").fadeIn("fast");
-			$("#nav").addClass("dark", "slow");
 		} else {
 			$("#main").fadeOut("fast");
 			$("#ucvtsLogo").fadeIn("fast");
@@ -48,10 +47,9 @@ $(window).scroll(function() {
 			$("#mail").removeClass("mail-left","fast");
 			$("#mail").addClass("mail","fast");
 			$("#circle").fadeIn("fast");
-			$("#nav").removeClass("dark", "slow");
 		}
 	}
-	if ($(document).scrollTop() > $(window).height()) {
+	if ($(document).scrollTop() > $(window).height()-55) {
 		$("#nav").addClass("dark", "slow");
 	} else {
 		$("#nav").removeClass("dark", "slow");
