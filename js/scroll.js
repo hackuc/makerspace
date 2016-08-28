@@ -1,3 +1,5 @@
+//Copyright 2016 Alice Gao and Skanda Rao
+
 $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
