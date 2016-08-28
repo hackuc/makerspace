@@ -95,6 +95,16 @@ nav {
 /*	color: #e0caaf;*/
     transition: 1s;
 }
+
+h1 {
+	font-family: 'Enriqueta';
+	font-size: 50px;
+	position: absolute;
+	color: #f0fff0;
+	top: 150px;
+	right: 125px
+}
+
 div.image {
 	width: 100%;
 	height: 100%;
@@ -119,7 +129,7 @@ div.rcolumn{
 	right: 10%;
 	width: 100%;
 	/*min-height: 350px;*/
-	padding: 50px 10vw 50px 10vw;
+	padding: 50px 15vw 50px 15vw;
 	font-family: 'FiraSans';
 	font-size: 20px;
 	margin-right: 0%;
@@ -135,7 +145,8 @@ div.contact {
 }
 a.circle, a:hover.circle {
 	position:absolute;
-	background:#272E48;
+	background: #272E48;
+	background: #090b11;
 	display:inline;
 	float:top;
 	top:1vw;
@@ -424,11 +435,11 @@ input {
 
 label {
   display: block;
-  margin-left: -35px;
-  color: #000;
+  margin-left: -30px;
+  color: #333;
 }
 
-#label1::before {
+label::before {
   content: "+";
   vertical-align: text-top;
   text-align: center;
@@ -439,18 +450,66 @@ label {
   background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
 }
 
-#label1:hover {
-	color: #444;
+label:hover {
+  color: #000;
+}
+
+#faq1 {
+	display: none;
 }
 
 #toggle1:checked ~ #faq1 {
-  display: inline;
+  display: block;
 }
 
 #toggle1:checked ~ #label1::before {
   content: "-";
 }
 
-#faq1 {
+#faq2 {
 	display: none;
+}
+
+#toggle2:checked ~ #faq2 {
+  display: block;
+}
+
+#toggle2:checked ~ #label2::before {
+  content: "-";
+}
+
+#faq3 {
+	display: none;
+}
+
+#toggle3:checked ~ #faq3 {
+  display: block;
+}
+
+#toggle3:checked ~ #label3::before {
+  content: "-";
+}
+
+#faq4 {
+	display: none;
+}
+
+#toggle4:checked ~ #faq4 {
+  display: block;
+}
+
+#toggle4:checked ~ #label4::before {
+  content: "-";
+}
+
+#faq5 {
+	display: none;
+}
+
+#toggle5:checked ~ #faq5 {
+  display: block;
+}
+
+#toggle5:checked ~ #label5::before {
+  content: "-";
 }
