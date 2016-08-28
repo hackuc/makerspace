@@ -105,8 +105,8 @@ h1 {
 	font-size: 50px;
 	position: absolute;
 	color: #f0fff0;
-	top: 150px;
-	right: 125px
+	top: 25vh;
+	right: 8vw;
 }
 
 div.image {
